@@ -7,7 +7,7 @@ This is an at-home exercise for frontend and full-stack developers.
 ## Instructions
 * Clone this repo
 * Complete the exercise and submit either a zip of the solution or a link to a new repo
-* You may use any resources, frameworks, libraries, etc and style the markup however you like
+* You may use any resources, frameworks, libraries, etc and style the markup however you like, but please keep the code clean
 
 ## Requirements
 Using the provided JSON data `recipes.json`, representing a collection of meal recipes, create a micro frontend application that meets the following criteria:
