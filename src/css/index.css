@@ -3,3 +3,31 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+h1 {
+  text-align: center;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recipesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipe {
+  width: 300px;
+  background: cyan;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.recipe__type span,
+.recipe__time span {
+  font-weight: bold;
+}
