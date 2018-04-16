@@ -3,15 +3,14 @@ import Ingredient from './Ingredient';
 
 class IngredientsList extends Component {
   render() {
-    const items = [];
-    this.props.ingredients.forEach((element) => {
-      items.push(<Ingredient key={element} name={element} />);
-    });
+    const { ingredients } = this.props;
+    const ingredientElements = ingredients
+      .map(ingredient => <Ingredient key={ingredient} name={ingredient} />);
 
     return (
       <ul className="ingredientsList">
         <h3>Ingredients :</h3>
-        {items}
+        {ingredientElements}
       </ul>
     );
   }
