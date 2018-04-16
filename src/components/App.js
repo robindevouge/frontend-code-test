@@ -19,6 +19,12 @@ class App extends Component {
     });
   }
 
+  filterRecipes(recipes) {
+    const { filterText } = this.state;
+    return recipes.filter(recipe => !filterText.length ||
+      recipe.name.toLowerCase().indexOf(filterText.toLowerCase()) > -1);
+  }
+
   render() {
     return (
       <div className="App">
@@ -29,7 +35,7 @@ class App extends Component {
         />
         <RecipesList
           filterText={this.state.filterText}
-          recipes={this.props.recipes}
+          recipes={this.filterRecipes(this.props.recipes)}
         />
       </div>
     );
