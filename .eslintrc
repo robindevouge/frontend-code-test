@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb-base",
+
+  "rules": {
+    "indent": "off",
+    "no-plusplus": "off",
+    "max-len": ["error", 100]
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  // Declare here any variables that should be allowed as global (keep it limited to what is strictly necessary
+  "globals": {
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  }
+}
