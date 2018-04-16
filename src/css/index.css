@@ -14,6 +14,11 @@ ul, li {
   list-style: none;
 }
 
+.searchbar {
+  display: block;
+  margin: 20px auto;
+}
+
 .recipesList {
   display: flex;
   flex-wrap: wrap;

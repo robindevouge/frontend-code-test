@@ -5,7 +5,7 @@ class IngredientsList extends Component {
   render() {
     const items = [];
     this.props.ingredients.forEach((element) => {
-      items.push(<Ingredient name={element} />);
+      items.push(<Ingredient key={element} name={element} />);
     });
 
     return (
