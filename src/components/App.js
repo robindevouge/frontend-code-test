@@ -21,10 +21,11 @@ class App extends Component {
 
   filterRecipes(recipes) {
     const { filterText } = this.state;
-    return recipes.filter(recipe => !filterText.length ||
-      recipe.name.toLowerCase().indexOf(filterText.toLowerCase()) > -1);
+    return recipes.filter(recipe =>
+      !filterText.length ||
+      recipe.name.toLowerCase().indexOf(filterText.toLowerCase()) > -1 ||
+      recipe.ingredients.filter(ingr => ingr.toLowerCase().indexOf(filterText.toLowerCase()) > -1).length > 0);
   }
-
   render() {
     return (
       <div className="App">
