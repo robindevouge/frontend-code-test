@@ -8,6 +8,7 @@ class App extends Component {
 
     this.state = {
       filterText: '',
+      selectedRecipes: [],
     };
 
     this.handleSearchbarTyping = this.handleSearchbarTyping.bind(this);
@@ -26,6 +27,7 @@ class App extends Component {
       recipe.name.toLowerCase().indexOf(filterText.toLowerCase()) > -1 ||
       recipe.ingredients.filter(ingr => ingr.toLowerCase().indexOf(filterText.toLowerCase()) > -1).length > 0);
   }
+
   render() {
     return (
       <div className="App">
